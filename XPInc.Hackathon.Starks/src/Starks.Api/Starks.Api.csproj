@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.5.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Starks.Application\Starks.Application.csproj" />
+    <ProjectReference Include="..\Starks.Domain\Starks.Domain.csproj" />
+    <ProjectReference Include="..\Starks.Infrastructure.TwiiloAdapter\Starks.Infrastructure.TwiiloAdapter.csproj" />
+    <ProjectReference Include="..\Starks.Repository.Mock\Starks.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>
